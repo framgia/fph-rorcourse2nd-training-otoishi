@@ -9,7 +9,19 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
- *= require_tree .
- *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header nav {
+  background-color: #f3981d !important;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #ffffff;
+	margin-right: 20px;
+}
+.navbar-default .navbar-brand {
+	font-size: 30px;
+	color: #ffffff;
+}
