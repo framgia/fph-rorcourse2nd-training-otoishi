@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
- root "dashboard#index"
+  devise_for :users
+  root "dashboard#index"
+  post "dashboad/create" => "dashboad#create"
 end
